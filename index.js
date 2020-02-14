@@ -3,7 +3,7 @@ class Formatter {
     return str[0].toUpperCase() + str.substring(1); 
   }
   static sanitize(str){
-    str.replace(/[^A-Za-z0-9- ']+/g,'');  
+    str.replace(/[^A-Za-z0-9- ']+/g,"");  
     return str; 
   }
   static titleize(string) {
