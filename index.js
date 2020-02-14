@@ -10,7 +10,7 @@ class Formatter {
     let words = string.split(' ');
     let first = words.shift(); 
     let titledFirst = first.charAt(0).toUpperCase() + first.slice(1); 
-    for (let n = 1; n < words.length; n++) {
+    for (let n = 0; n < words.length; n++) {
       if(words[n] != "a" && words[n] != "an" && words[n] != "the" && words[n] != "but" && words[n] != "of" && words[n] != "and" && words[n] != "for" && words[n] != "at" && words[n] != "from" && words[n] != "by") {
         words[n] = words[n].charAt(0).toUpperCase() + words[n].slice(1);
       } 
